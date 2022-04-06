@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'damp-harbor-46396.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1:8000', 'damp-harbor-46396.herokuapp.com',]
 
 
 # Application definition
@@ -155,6 +155,3 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-# Configure Django App for Heroku.
-import django_heroku
-django_heroku.settings(locals())
